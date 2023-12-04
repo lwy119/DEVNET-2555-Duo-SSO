@@ -20,7 +20,7 @@ This repository serves as the demo source code for Cisco Live Melbourne session 
 
 1. Clone this repository by `git clone https://github.com/lwy119/DEVNET-2555-Duo-SSO.git`.
 
-2. Update the parameters in [.env](./env) file for Duo Web SDK, [saml/settings.json](./saml/settings.json) for SSO with SAML 2.0 and [oidc/settings.json](./oidc/settings.json) for SSO with OIDC. Detailed instruction in below sections.
+2. Update the parameters in [.env](./.env) file for Duo Web SDK, [saml/settings.json](./saml/settings.json) for SSO with SAML 2.0 and [oidc/settings.json](./oidc/settings.json) for SSO with OIDC. Detailed instruction in below sections.
 
 3. Optionally, create a Python 3 virtual environment.
 ```
