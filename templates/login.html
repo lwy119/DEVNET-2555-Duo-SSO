@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DEVNET-2555</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+  <div class="login-form">
+    <form method="POST" action="/websdk">
+      <h1>DEVNET-2555 DEMO</h1>
+      <div class="content">
+        <div class="input-field">
+          <input type="text" placeholder="Username" name="username" autocomplete="nope">
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Password" name="password" autocomplete="new-password">
+        </div>
+      </div>
+      <div class="action">
+        <button>Duo Web SDK Sign in</button>
+      </div>
+    </form>
+    <form method="POST" action="/saml/sso">
+      <div class="action">
+        <button>Duo SSO with SAML 2.0</button>
+      </div>
+    </form>
+    <form method="POST" action="/oidc/sso">
+      <div class="action">
+        <button>Duo SSO with OIDC Relying Party</button>
+      </div>
+    </form>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>

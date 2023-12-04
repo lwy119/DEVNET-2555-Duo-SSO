@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DEVNET-2555</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+    <div class="login-form">
+        <h2>You've successfully logged in!</h2>
+        <h4>Method: {{ method }}</h4>
+        <h4>Duo Tx/Session: {{ duo_session }}</h4>
+        <h4>Username: {{ username }}</h4>
+        {% if method == "Duo Web SDK" %}
+        <form method="POST" action="/websdk/logout">
+            <div class="action">
+                <button>Logout</button>
+            </div>
+        </form>
+        {% elif method == "Duo SSO with SAML 2.0" %}
+        <form method="POST" action="/saml/slo">
+            <div class="action">
+                <button>Logout</button>
+            </div>
+        </form>
+        {% else %}
+        <form method="POST" action="/oidc/logout">
+            <div class="action">
+                <button>Logout</button>
+            </div>
+        </form>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
