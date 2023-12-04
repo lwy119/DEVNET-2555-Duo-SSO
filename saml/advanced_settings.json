@@ -18,19 +18,19 @@
     },
     "contactPerson": {
         "technical": {
-            "givenName": "Alvin Lau",
-            "emailAddress": "alvlau@cisco.com"
+            "givenName": "",
+            "emailAddress": ""
         },
         "support": {
-            "givenName": "Alvin Lau",
-            "emailAddress": "alvlau@cisco.com"
+            "givenName": "",
+            "emailAddress": ""
         }
     },
     "organization": {
         "en-US": {
-            "name": "alvlau.com",
-            "displayname": "alvlau.com",
-            "url": "https://alvlau.com"
+            "name": "",
+            "displayname": "",
+            "url": ""
         }
     }
 }
