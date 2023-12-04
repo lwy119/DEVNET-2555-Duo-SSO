@@ -63,6 +63,8 @@ source venv/bin/activate
 
 4. Remember to save the updates on **Generic SAML Service Provider**.
 
+5. If you want to add a redirect URL after Single Logout, on [Duo Admin Panel](https://admin.duosecurity.com/) go to **Single Sign-On**, click your **Authentication Source**, and find **Logout Redirect URL** parameter.
+
 
 
 ## Instruction for SSO with OIDC ([Offical Doc](https://duo.com/docs/sso-oidc-generic))
